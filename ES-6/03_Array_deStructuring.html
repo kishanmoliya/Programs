@@ -1,0 +1,15 @@
+<script>
+    const myFriends = ['kishan','karan','uttam','magan','gagan'];
+
+    // let [top1,top2,top3,top4,top5] = myFriends;
+    // console.log("My first friend is "+ top1);
+
+    console.log(myFriends.length);
+
+    let [,top2,,,last] = myFriends;
+    console.log(`${top2} and ${last}`);     //top1,3,4 is undefined!
+
+    let top1;
+    [top1] = myFriends;
+    console.log(top1);
+</script>

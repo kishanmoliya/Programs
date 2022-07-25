@@ -1,0 +1,40 @@
+<script>
+    // //es5
+    // var sum = function(){
+    //     var a = 5;
+    //     var b= 10;
+    //     return a+b;
+    // }
+    // console.log(sum());
+
+    //es6
+    // const sum = () => {
+    //    let a = 5;
+    //    let b = 10;
+    //     return a+b;
+    // }
+    // console.log(sum());
+
+
+    // let a = 5;                                        //if only one argument!
+    // let b = 10;
+    // const sum = () => {return a+b }                  //const sum = () => a+b
+    // console.log(sum());
+
+
+    //Para perameterised
+    // function multi(a,b=5){
+    //     console.log(`${a*b}`);
+    // }
+    // multi(10);
+
+    //In Arrow Function
+    // const multi = (a,b=5) => {
+    //     console.log(`${a*b}`);
+    // }
+    // multi(10);
+
+    let a = 10;
+    const sum = (b) => a+b
+    console.log(sum(15));
+</script>

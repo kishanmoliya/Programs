@@ -1,0 +1,34 @@
+<script>
+    // const stuDetails = {
+    //     name   : "kishan",
+    //     rollNo : 251,
+    //     Enroll : 21010101128
+    // }
+    // console.log(`My name is ${stuDetails.name}.`)
+
+    // const stuDetails = {
+    //     name   : "kishan",
+    //     rollNo : 251,
+    //     Enroll : 21010101128
+    // }
+
+    // let {name,rollNo,Enroll} = stuDetails;      //for rename name:fName,rollNo:MyRollNo...
+
+    // console.log(`My name is ${name}.`)
+
+
+    //SubObjects...
+    const stuDetails = {
+        name   : "kishan",
+        rollNo : 251,
+        Enroll : 21010101128,
+        subject:{
+            first : "java",
+            second: "c++"
+        }
+    }
+
+    let {name,rollNo,Enroll,subject} = stuDetails;     
+
+    console.log(`My name is ${name} and my first lenguage is ${subject.first}.`);    
+</script>
