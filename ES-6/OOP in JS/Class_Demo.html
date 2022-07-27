@@ -1,0 +1,29 @@
+<script>
+    class Student{
+        constructor(name,age,deg){
+            this.myName = name;
+            this.myAge = age;
+            this.myDeg = deg;
+        }
+        //Instance Method
+        sDetails(){
+            return (`My name is  ${this.myName}, I am ${this.myAge} years old,
+            and My Degree is ${this.myDeg}.`);
+        }
+    }
+
+    class Player extends Student{
+        constructor(name,age,deg,game){
+            super(name,age,deg);
+            this.game = game;
+        }
+        sport(){
+            return (`${super.sDetails()} I am player of ${this.game}`);
+        }
+    }
+
+    let obj1 = new Player('Kishan',19,'B-TECH','Football');
+    let obj2 = new Player('Moliya',29,'B-TECH','Cricate');
+    console.log(obj1.sport());
+    console.log(obj2.sport());
+</script>

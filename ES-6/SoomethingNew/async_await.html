@@ -1,0 +1,35 @@
+<script>
+    const obj1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let roll_no = [1, 2, 3, 4, 5];
+            resolve(roll_no);
+            // reject('Some error!')
+        }, 2000);
+    });
+
+    const getDetail = (index) => {
+        return new Promise((resolve, reject) => {
+            setTimeout((index) => {
+                let details = {
+                    name: 'Kishan',
+                    enroll: 210101128
+                }
+                resolve(`My RollNo is ${index}, My name is ${details.name}, and my enroll is ${details.enroll}.`);
+            }, 2000, index);
+        });
+    }
+
+
+    async function getData() {     //async meance onle return promise we not send the value!
+        const rolldetail = await obj1;
+        console.log(rolldetail);
+
+        const data = await getDetail(rolldetail[1]);
+       // console.log(data);
+
+        return data;
+    }
+    const name = getData().then((name) => {
+        console.log(name);
+    });
+</script>
