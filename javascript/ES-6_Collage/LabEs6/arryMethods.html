@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        student = [
+            {fName: 'Kishan', lName: 'Moiya', collage:'Darshan', SPI: 9.45},
+            {fName: 'Abhay', lName: 'Panara', collage:'Darshan', SPI: 9.55},
+            {fName: 'rahul', lName: 'Dat', collage:'Marvadi', SPI: 8.45},
+            {fName: 'Magan', lName: 'Savaliya', collage:'Arpit', SPI: 7.45}
+        ];
+
+        // 1) Filter Method...
+        // setStudentDetails = student.filter((stu) => {
+        //     if(stu.SPI > 8){
+        //         return true;
+        //     }
+        // })
+        // console.log(setStudentDetails);
+
+        // 2)Find Method...
+        // setStudentDetails = student.find((stu) => {     //It eill return first match element!
+        //     if(stu.collage ==  "Darshan"){
+        //         return true;
+        //     }
+        // });
+
+        // 3)Includs Method...
+        // friends = ['magan','virat','viranshu','sanjay']
+        // console.log(friends.includes("magan"));
+
+        // 4) Map Method...
+        // studentDetails = student.map((stu) => {
+        //     return "<li>" + stu.fName + "<li>"
+        // });
+        // document.write("<ul>");
+		// document.write(studentDetails);
+		// document.write("</ul>");
+
+        //5) Every Method...
+        // let k = student.every((stu) => {    //if all condition are true then return teue
+        //     if(stu.SPI>5){                  // else false
+        //         return true;
+        //     }
+        // }) 
+        // console.log(k);
+
+        //Arrow function Demo...                    
+        // let print = prompt('Enter the name')     //It will print name every 5 Seccond!
+        // setInterval(() => {
+        //     console.log(print);
+        // }, 5000);
+
+        //ForEach Loop...
+        // student.forEach(stu => {
+        //     console.log(stu.fName); 
+        // });
+    </script>
+</body>
+</html>

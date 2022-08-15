@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+		const faculty1 = 
+		{
+			FacultyName:"arjun",
+			FacultyAge:99,
+			FacultyEmail:"arjun.bala@dar.ac.in",
+			printMe:function(){
+				console.log("name =",this.FacultyName," age = ",this.FacultyAge)
+			}
+		}
+		var faculty2 = 
+		{
+			FacultyName:"abc",
+			FacultyAge:22,
+			FacultyEmail:"asdf@dar.ac.in",
+			printMe: (xyz,age) => {
+				console.log("name =",xyz, "age = " + this.FacultyAge)
+			}
+		}
+		//faculty1.FacultyAge = 20;
+		faculty2.printMe('kishan',65);
+
+		// faculty2.FacultyAge = 88;
+		// faculty2.printMe();
+		
+	</script>
+</body>
+</html>
