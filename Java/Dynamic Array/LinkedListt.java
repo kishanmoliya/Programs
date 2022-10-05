@@ -21,6 +21,8 @@ public class LinkedListt {
         l1.addLast(777);
         l1.addFirst(888);
 
+        l1.remove();
+
         System.out.println(l1.contains(7));
         System.out.println(l1.indexOf(7));
         System.out.println(l1.lastIndexOf(7));
